@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Biorex: Relationship Extractor</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" media="screen" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+	</head>
+	<body style = "background-color: lightgrey; padding-top: 70px; ">
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div id="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Relationship extraction results</a>
+			</div>
+		</div>
+	</nav>
+		<div id="container">
+			<div id="content">
+				The current article seems to have the following resulting relationships 
+			</div>
+			<BR><BR>
+			<table border="1" style="width:50%" id="relations">
+			<thead>
+			<tr>
+				<th> Relation String </th>
+				<th> Score </th>
+			</tr>
+			</thead>
+			<tbody>
+			{% for key, value in relationships.iteritems() %}
+			<tr>
+				<td width="30%"> {{ key }} </td>
+				<td width="10%"> {{ value }} </td>
+			</tr>
+			{% endfor %}
+			</tbody>
+			</table>
+			<BR><BR>
+			<div id="content" class="container">
+				<h1>Abstract</h1>
+				<p class="text-justify"> {{ abstract }} </p> 
+
+			</div>
+		</div>
+		<script
+                        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+                        crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>	
+		<script>
+			$(function() {
+				$("#relations").dataTable();
+			})
+		</script>
+	</body>
+</html>

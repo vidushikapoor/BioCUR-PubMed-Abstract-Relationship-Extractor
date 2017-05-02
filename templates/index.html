@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+<head> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>BioCUR</title> 
+</head> 
+	
+<style>
+body {
+	background-image: url("static/pineapple.jpg");
+	background-position:	centre;
+	border:	10;
+	background-attachment:	fixed;
+} 
+</style>
+<div class="container">
+<!--<img src="/static/logo.png" height="100" width="200" alt="image" align="right">-->
+<img class="img-responsive center-block" src="/static/logo-biocur.png" alt="image" width="300" height="150">
+<!--<td>&nbsp;</td> --> 
+<br><br>
+<h1 style="color:red;">BioCUR</h1>
+<p class="text-justify" style="color:black;"> BioCUR is a program that automatically identifies and extracts biomedical relationships from english sentences. BioCUR is designed for large scale information extraction from PubMed abstracts.</br></br></p>
+
+<form method="POST" action="/result" name="form1">
+<div class="form-group">
+	<label for="name">Name: </label>
+	<input type="text" name="name" id="name" placeholder="Vidushi Kapoor">
+</div>
+<div class="form-group">
+	<label for="email">Email: </label>
+	<input type="email" class="form-control" id="email" placeholder="vidushikapoor@biocur.com" name="email" style="width: 300px;">
+</div>
+<div class="form-group">
+	<label for="PubmedID">PubmedID</label>
+	<textarea class="form-control" rows="5" name="PubmedID"></textarea>
+</div>
+<button type="submit" class="btn btn-default" name="SUBMIT">Submit</button>
+<!--<input type="submit" name="SUBMIT" value="Submit">
+-->
+<!--
+<table width="70%" border="0" cellspacing="0" cellpadding="0"> 
+	<tr> 
+  		<td> <font size = "5" color ="blue"> Name: </td> 
+  		<td colspan="4">
+			<input type="text" name="name" placeholder="Vidushi Kapoor" size="25">
+		</td> 
+	</tr> 
+	<tr> 
+  		<td> <font size = "5" color ="blue">Email: </td> 
+  		<td colspan="4">
+			<input type="text" name="email" placeholder="vidushikapoor@biorex.com" size="25">
+		</td> 
+	</tr> 
+	<tr> 
+  		<td><font size = "5" color ="blue">Text:</td> 
+  		<td colspan="4"><textarea name="comment" cols="25" rows="5"></textarea></td> 
+	</tr> 
+  		<td> &nbsp; </td>
+		<td> &nbsp; </td>
+  		<td colspan="4">
+			<font size="10"><input type="submit" name="SUBMIT" value="Submit">
+		</td> 
+	</tr> 
+</table> 
+-->
+</form> 
+	<h3><br><u>Contact Us</u></h3>
+	<h4><font size="4">&#9742;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 (650)-396-0079</h4>
+	<h4><font size="4">&#9971;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Washington Sq, San Jose, CA 95192</h4>
+	<h4><font size="4">&#9993;&nbsp;&nbsp;&nbsp;<font size="4">vidushikapoor@biocur.com</h4>
+
+</body> 
+</html>
