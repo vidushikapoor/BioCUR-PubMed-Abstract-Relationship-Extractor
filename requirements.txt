@@ -1,5 +1,5 @@
 Flask==0.10.1
-nltk==3.2.1
+nltk==3.4.5
 lxml==3.6.4
 numpy==1.11.2
 biopython==1.68
